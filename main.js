@@ -1,12 +1,20 @@
-function isLeap(year){
-    if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
-        userOutput.innerHTML = result.value + " is a leap year.";
+function isLeap(){
+    let userInput = document.getElementById("year");
+    let lengthDigit = userInput.value.length;
+
+    if(lengthDigit == 4){
+        let year = parseInt(userInput.value);
+        let output = document.getElementById("output");
+
+        if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+            output.innerHTML = year + ' is a leap year.';
+        }
+        else{
+            output.innerHTML = year + ' is not a leap year.';
+        }
     }
     else{
-        userOutput.innerHTML = result.value + " is not a leap year.";
+        output.innerHTML ='Invalid year.';
     }
+    
 }
-let userInput = parseInt(document.getElementById("year"));
-let userOutput = document.getElementById("output");
-
-let result = isLeap(userInput);
