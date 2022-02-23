@@ -16,5 +16,4 @@ function isLeap(){
     else{
         output.innerHTML ='Invalid year.';
     }
-    
 }
