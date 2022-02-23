@@ -1,11 +1,12 @@
 function isLeap(year){
     if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
-        console.log('This is a leap year.')
+        userOutput.innerHTML = result.value + " is a leap year.";
     }
     else{
-        console.log('This is not a leap year.')
+        userOutput.innerHTML = result.value + " is not a leap year.";
     }
 }
+let userInput = parseInt(document.getElementById("year"));
+let userOutput = document.getElementById("output");
 
-let myYear = 1700;
-let result = isLeap(myYear);
+let result = isLeap(userInput);
