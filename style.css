@@ -49,7 +49,6 @@ body{
     height: 30px;
     width: 200px;
 }
-
 #button{
     font-size: 30px;
     margin-top: 12px;
@@ -68,4 +67,7 @@ body{
 .result{
     font-size: 20px;
     margin-bottom: 50px;
+}
+.result h2{
+    color: #FF4C29;
 }
