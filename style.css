@@ -7,9 +7,11 @@ body{
     background-color: #082032;
     color: #00B4D8;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+
 }
 .container{
     width: 500px;
@@ -70,4 +72,7 @@ body{
 }
 .result h2{
     color: #FF4C29;
+}
+footer{
+    margin-top: 50px;
 }
